@@ -1,0 +1,20 @@
+# ----------------------------------------------------------------------
+# .htaccess
+#
+# A .htaccess file (hypertext access) is the
+# configuration file that allows for web server configuration.
+# ----------------------------------------------------------------------
+
+# ----------------------------------------------------------------------
+# Central Directory file
+# ----------------------------------------------------------------------
+DirectoryIndex index.php
+
+# ----------------------------------------------------------------------
+# ERROR documents
+# ----------------------------------------------------------------------
+ErrorDocument 400 /errors/badrequest.html
+ErrorDocument 401 /errors/authreqd.html
+ErrorDocument 403 /errors/forbid.html
+ErrorDocument 404 /errors/notfound.html
+ErrorDocument 500 /errors/serverr.html
