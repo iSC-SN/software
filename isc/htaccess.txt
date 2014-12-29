@@ -1,0 +1,20 @@
+#This is template for .htaccess file, GRA4 will change it during the installation process.
+#However, for some unusual hosting configurations you may need to adjust RewriteBase manually.
+#See http://gra4.com/relatedgroups/owner/94 for support and updates. 
+#
+<Files gra4.cfg>
+Order deny,allow
+deny from all
+</Files>
+
+#Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^(.*) index.php
+AddDefaultCharset UTF-8
+# Don't listing directory
+#Options -Indexes
+
+#Here is gonna be real value, something like /mycoolsystem/gra4
+RewriteBase /
+
+#end of file

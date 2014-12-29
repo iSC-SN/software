@@ -1,0 +1,8 @@
+/* This CSS is reserved for feature use. */
+
+/*Stats  if 'show_times' => '1', see gra4_config.php */
+.gra4_stats{
+font-size: 10px;
+font-family: "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
+color:lightgray;
+}

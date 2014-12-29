@@ -1,0 +1,4 @@
+<!-- Right ad box (ads/right.html). Replace content of this file with your ads. -->
+<div id="ad_right" style='display:none; width:120px; height:600px; border:dotted red 2px; color:lightgray; text-align: center;'>
+Ads here!
+</div>

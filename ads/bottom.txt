@@ -1,0 +1,4 @@
+<!-- Bottom ad box (ads/bottom.html). Replace content of this file with your ads. -->
+<div id="ad_bottom" style='display:none; width:728px; height:90px; border:dotted red 2px; color:lightgray; text-align: center; margin-left: auto; margin-right: auto'>
+Ads here!
+</div>

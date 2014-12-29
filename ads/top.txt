@@ -1,0 +1,82 @@
+<!--
+Top ad box (ads/top.html). Replace content of this file with your ads, or just erase to leave right top area blank.
+-->
+
+
+<div id="ad_top"  style='width:728px; height:90px; border:dotted lightgray 1px; color:lightgray; text-align: center;'>
+
+
+<div id="ad_top1" onMouseOver="clearTimeout(oTopTimer);" style='padding: 2px; font-family:Verdana,Helvetica,sans-serif; font-size:12px; color:black; text-align: left; '>
+Social networks put plenty of websites out of commission - anyone can create a group on Facebook, and it's much easier than to build and support whole website.
+We want to get web-masters back into the game - with GRA4 you have full-blown social network.
+<br>
+You are looking at the simplest GRA4 type - Micro. This script can run on any PHP hosting (including free ones), and does not even require a database server.
+<a href='http://gra4.com/wiki/Category:GRA4_Micro'  title='Read more about Micro' >Read more about Micro</a>
+</div>
+
+<div id="ad_top2" onMouseOver="clearTimeout(oTopTimer);"  style='display:none; width:728px;height:90px; padding: 2px; font-family:Verdana,Helvetica,sans-serif; font-size:12px; color:black; text-align: left; '>
+Control your ads from the admin interface!<br/>
+Place ad codes to 
+	<a href="javascript:ClickTop();">Top</a> (this one), 
+	<a href="javascript:ClickOther('ad_left');">Left</a>,
+	<a href="javascript:ClickOther('ad_right');">Right</a>, 
+	<a href="javascript:ClickOther('ad_bottom');">Bottom</a>, 
+	with your ad codes, and make money while you and your friends are socializing.
+</div>
+
+<div id="ad_top_google" style='display:none; padding: 2px; font-family:Verdana,Helvetica,sans-serif; font-size:12px; color:black; text-align: left; '>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- G4_MICRO_H_1 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-8731089242821380"
+     data-ad-slot="7890625727"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+<script>
+var oTopTimer;
+function ShowSecondAd()
+{
+	document.getElementById('ad_top1').style.display = 'none';
+	document.getElementById('ad_top2').style.display = 'block';
+	oTopTimer = window.setTimeout('ShowGogleAd();',4000); 
+}
+
+function ShowGogleAd()
+{
+	document.getElementById('ad_top1').style.display = 'none';
+	document.getElementById('ad_top2').style.display = 'none';
+	document.getElementById('ad_top_google').style.display = 'block';
+}
+oTopTimer = window.setTimeout('ShowSecondAd();',4000); 
+
+function ClickTop()
+{
+	var o = document.getElementById('ad_top');
+	if(o)
+	{
+		o.style.border = 'dotted red 2px';
+	}
+}
+
+function ClickOther(sId)
+{
+	var o = document.getElementById(sId);
+	if(o)
+	{
+		if(o.style.display == 'block')
+		{
+			o.style.display = 'none';
+		}
+		else
+		{
+			o.style.display = 'block';	
+		}
+	}
+}
+
+</script>

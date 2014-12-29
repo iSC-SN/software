@@ -1,0 +1,15 @@
+# .htaccess file
+
+# prevent web access to the data files
+
+RewriteEngine on
+	RewriteRule ^(.*) index.php
+	AddDefaultCharset UTF-8
+	Options -Indexes
+
+<Files users.txt>
+	Order deny,allow
+	deny from all
+</Files>
+
+# end of file
